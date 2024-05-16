@@ -30,8 +30,8 @@ jobs:
         id: cache-images
         uses: actions/cache@v4
         with:
-          path: ./exampleSite/content
-          key: images-${{ hashFiles('exampleSite/content/**') }}
+          path: ./content
+          key: images-${{ hashFiles('content/**') }}
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
