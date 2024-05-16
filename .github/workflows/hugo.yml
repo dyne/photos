@@ -32,6 +32,10 @@ jobs:
         with:
           path: ./content
           key: images-${{ hashFiles('content/**') }}
+      - name: Download example images
+        if: steps.cache-images.outputs.cache-hit != 'true'
+        working-directory: ./exampleSite
+        run: ./pull-images.sh
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
