@@ -15,7 +15,7 @@ theme = "gallery"
   title = "Dyne Memories"
   [params.author]
     email = "info+memories@dyne.org"
-    name = "Your Name"
+    name = "Dyne.org Foundation"
   [params.socialIcons]
     facebook = "https://www.facebook.com/dyne.org/"
     instagram = "https://www.instagram.com/dyneorg/"
@@ -46,7 +46,7 @@ theme = "gallery"
 [menu]
   [[menu.footer]]
     name = "GitHub"
-    url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    url = "https://github.com/dyne"
     weight = 3
 
 [services]
