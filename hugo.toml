@@ -1,0 +1,54 @@
+baseURL = "https://dyne.org/photos"
+copyright = "CC-BY Dyne.org"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
+languageCode = "en"
+timeZone = "Europe/Amsterdam"
+timeout = "120s"
+title = "Photos"
+theme = "gallery"
+
+[params]
+  defaultTheme = "light"
+  description = "Photo gallery of our good memories that we like to share with the public."
+  title = "Dyne Memories"
+  [params.author]
+    email = "info+memories@dyne.org"
+    name = "Your Name"
+  [params.socialIcons]
+    facebook = "https://www.facebook.com/dyne.org/"
+    instagram = "https://www.instagram.com/dyneorg/"
+    github = "https://github.com/dyne/"
+    youtube = "https://www.youtube.com/@dyneorg"
+    email = "mailto:info+memories@dyne.org"
+    website = "https://dyne.org"
+    mastodon = "https://toot.community/@dyne"
+    #pixelfed = "https://example.com"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+[module]
+  [module.hugoVersion]
+    min = "0.121.2"
+
+[menu]
+  [[menu.footer]]
+    name = "GitHub"
+    url = "https://github.com/nicokaiser/hugo-theme-gallery/"
+    weight = 3
+
+[services]
+  [services.rss]
+    limit = 100

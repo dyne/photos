@@ -1,4 +1,6 @@
 node_modules/
-package-lock.json
+public/
+resources/
 .hugo_build.lock
-exampleSite/assets/jsconfig.json
+hugo_stats.json
+#content/**/*.jpg
